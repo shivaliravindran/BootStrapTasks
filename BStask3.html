@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student Registration Form 2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css">
+  <style>
+    body {
+      font-family: arial;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      
+    }
+
+    .container {
+      padding: 40px;
+      width: 600px;
+      margin: 20px auto;
+      background-color: #f1f1f1;
+    }
+
+    .container h2 {
+      text-align: center;
+    }
+
+    fieldset {
+      border: 1px solid #d4d4d4;
+      padding: 20px 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .input-field {
+      display: flex;
+      margin-bottom: 15px;
+    }
+    
+    .input-field2{
+        margin-left: 197px;
+    }
+
+    label {
+      margin-right: 25px;
+      margin-top: 5px;
+      width: 30%;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .icon {
+      background: #fcfcfa;
+      color: black;
+      min-width: 40px;
+      border: 2px solid #e2e2e2;
+      border-right: none;
+      text-align: center;
+      padding: 7px;
+    }
+
+    .inputs {
+      padding: 3px 10px;
+      border: 2px solid #e2e2e2;
+      width: 40%;
+    }
+
+    input [type="radio"] {
+      margin-right: 8px;
+    }
+
+    .textarea {
+      padding: 8px;
+      border: 2px solid #e2e2e2;
+    }
+
+    .textarea-icon {
+      padding-top: 14px;
+    }
+
+    .button {
+      text-align: center;
+    }
+
+    .submit {
+      color: white;
+      background: #ee9a25;
+      padding: 9px 25px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #c9c9c9;
+    }
+    
+
+    .submit:hover {
+      background: #d1871e;
+    }
+
+    .reset {
+      color: white;
+      background: #c93232;
+      padding: 9px 25px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #c9c9c9;
+    }
+
+    .reset:hover {
+      background: #a32727;
+    }
+
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <fieldset>
+        <div class="input-field">
+          <label>First Name</label>
+          <i class="fa fa-user icon"></i>
+          <input type="text" class="inputs" placeholder="First Name">
+        </div>
+        <div class="input-field">
+          <label>Last name</label>
+          <i class="fa fa-user icon"></i>
+          <input type="text" class="inputs" placeholder="Last Name">
+        </div>
+        <div class="input-field">
+          <label>Email</label>
+          <i class="fa fa-envelope icon"></i>
+          <input type="email" class="inputs" placeholder="E-Mail Address">
+        </div>
+        <div class="input-field">
+          <label>Phone #</label>
+          <i class="fa fa-phone icon"></i>
+          <input type="text" class="inputs" placeholder="(845)555-1212">
+        </div>
+        <div class="input-field">
+            <label>Address</label>
+            <i class="fa fa-home icon"></i>
+            <input type="text" class="inputs" placeholder="Address">
+          </div><div class="input-field">
+            <label>City</label>
+            <i class="fa fa-home icon"></i>
+            <input type="text" class="inputs" placeholder="City">
+          </div>
+          <div class="input-field">
+            <label class="state">State</label>
+            <i class="fa fa-list icon"></i>
+            <select class="inputs" style="width: 253px">
+              <option value="0">Please select your state</option>
+              <option value="1">State 1</option>
+              <option value="2">State 2</option>
+              <option value="3">State 3</option>
+              <option value="4">State 4</option>
+              <option value="5">State 5</option>
+            </select>
+          </div>
+        <div class="input-field">
+          <label class="hosting">Do you have hosting? </label>
+          <input type="radio" value="Yes">Yes
+        </div>
+        <div class="input-field2">
+            <input type="radio" value="No"> No
+          </div>
+        <div class="input-field">
+          <label>Project Description</label>
+          <i class="fa-solid fa-pen icon"></i>
+          <textarea style="width: 253px; height: 70px;" placeholder="Project Description"></textarea>
+        </div>
+      </fieldset>
+      <div class="button">
+        <button type="submit" class="submit">Send <i class="fa-sharp fa-solid fa-paper-plane" ></i></button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
